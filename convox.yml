@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    health:
+      interval: 5
+      path: /
+      timeout: 4
+    port: null
+    scale:
+      count: 1
+      memory: 256
